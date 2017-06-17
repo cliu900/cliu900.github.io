@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<style>
+	td {
+			padding: 5px 10px;
+			background: yellow;
+			color: brown
+		}
+		
+		table {
+			border-color: tomato;
+			background-color: green;
+		}
+		
+		.name {
+			color: crimson font-size: 2em;
+			transition: all 1s linear;
+			position: relative;
+			left: 0;
+		}
+		
+		.name:hover {
+			left: 500px;
+			transform: rotateY(360deg)
+		}
+	}
+
+	</style>
+</head>
+
+<body>
+	<table border="">
+		<tr>
+			<th>Name</th>
+			<th>Phone Number</th>
+		</tr>
+		<tr>
+			<td rowspan="2" class='name'>Eric</td>
+			<td>111-111-1111</td>
+		</tr>
+		<tr>
+
+
+			<td>111-111-1111</td>
+		</tr>
+		<tr>
+			<td class='name'>Joan</td>
+			<td>333-333-3333</td>
+		</tr>
+		<tr>
+			<td class='name'>Charles</td>
+			<td>555-555-5555</td>
+		</tr>
+		<tfoot>
+			<td colspan=2>Table Footer</td>
+
+
+		</tfoot>
+	</table>
+</body>
+
+</html>

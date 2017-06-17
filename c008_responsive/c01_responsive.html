@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		button {
+			width: 24%;
+			height: 30px;
+			color: firebrick;
+			background-color: yellow;
+		}
+		
+		@media all and (max-width: 400px) {
+			button {
+				display: block;
+				margin: 5px auto;
+				width: 150px;
+				height: 40px;
+			}
+		}
+		
+		@media all and (min-width: 800px) {
+			button {
+				width: 194px;
+				background-color: red;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<button>1</button>
+	<button>2</button>
+	<button>3</button>
+	<button>4</button>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Google</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="shortcut icon" href="https://lh3.googleusercontent.com/DKoidc0T3T1KvYC2stChcX9zwmjKj1pgmg3hXzGBDQXM8RG_7JjgiuS0CLOh8DUa7as=w300">
+	<style>
+		body {
+			margin: 0;
+		}
+		
+		#main {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+		
+		#nav-top {
+			position: absolute;
+			top: 0;
+			width: 320px;
+			height: 50px;
+			right: 0;
+		}
+		
+		.twolinks:link {
+			color: black;
+			text-decoration: none;
+			font-family: sans-serif;
+			font-weight: lighter;
+			font-size: 13px;
+			display: inline;
+			margin-left: 10px;
+			position: relative;
+			top: 21px;
+			left: 53px;
+		}
+		
+		.twolinks:visited {
+			color: black;
+			text-decoration: none;
+		}
+		
+		.twolinks:hover {
+			text-decoration: underline;
+		}
+		
+		#ninedots {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: 17px;
+			margin-left: 71px;
+			background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+			background-position: -135px -40px;
+			background-repeat: no-repeat;
+		}
+		
+		#notif {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 20px;
+			left: 220px;
+			color: #fff;
+			background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+			background-position: -194px -21px;
+			background-size: 528px 68px;
+			background-color: grey;
+			border-radius: 50%;
+		}
+		
+		#notif:hover {
+			cursor: pointer;
+		}
+		
+		#name-div {
+			position: absolute;
+			width: 33px;
+			height: 33px;
+			border-radius: 35px;
+			background-color: green;
+			left: 261px;
+			top: 14px;
+		}
+		
+		#name-div:hover {
+			cursor: pointer;
+		}
+		
+		#name-div p {
+			font-family: sans-serif;
+			text-align: center;
+			margin-top: 6px;
+			color: white;
+			font-size: 20px;
+		}
+		
+		#center-div {
+			position: absolute;
+			width: 700px;
+			height: 350px;
+			top: 50%;
+			margin-top: -175px;
+			left: 50%;
+			margin-left: -350px;
+		}
+		
+		#canada {
+			position: absolute;
+			color: #4285f4;
+			top: 88px;
+			left: 428px;
+			font-family: sans-serif;
+		}
+		
+		#logo {
+			position: absolute;
+			height: 92px;
+			width: 272px;
+			left: 50%;
+			top: 30px;
+			margin-left: -136px;
+		}
+		
+		#searchbox {
+			position: absolute;
+			width: 628px;
+			height: 40px;
+			top: 150px;
+			left: 40px;
+			color: black;
+			font-family: sans-serif;
+			font-size: 20px;
+		}
+		
+		.twobuttons {
+			position: absolute;
+			width: 140px;
+			height: 35px;
+			background-color: #f2f2f2;
+			top: 230px;
+			text-align: center;
+		}
+		
+		.twobuttons p {
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #757575;
+			margin-top: 10px;
+			font-size: 13px;
+		}
+		
+		#language {
+			position: absolute;
+			width: 100%;
+			height: 30px;
+			top: 430px;
+			text-align: center;
+		}
+		
+		#language p {
+			font-family: sans-serif;
+			font-size: 13px;
+		}
+		
+		#french {
+			text-decoration: none;
+			color: #1a0dab;
+		}
+		
+		#french:hover {
+			text-decoration: underline;
+		}
+		
+		#french:visited {
+			text-decoration: none;
+			color: #1a0dab;
+		}
+		
+		#nav-bottom {
+			position: absolute;
+			width: 100%;
+			height: 30px;
+			bottom: 0;
+			background: #f2f2f2;
+			border-top: 1px solid #e4e4e4;
+		}
+		
+		#nav-bottom-left {
+			position: absolute;
+			width: 250px;
+			height: 20px;
+			left: 30px;
+			top: 8px;
+			margin-left: -10px;
+		}
+		
+		#nav-bottom-right {
+			position: absolute;
+			width: 400px;
+			height: 20px;
+			right: 0;
+			top: 6px;
+			margin-right: -10px;
+		}
+		
+		.nav-bottom-a:link {
+			font-family: sans-serif;
+			text-decoration: none;
+			color: #666;
+			font-weight: lighter;
+			font-size: small;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		
+		.nav-bottom-a:visited {
+			text-decoration: none;
+			color: #777;
+		}
+		
+		.nav-bottom-a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="nav-top">
+			<a target="blank" href="https://mail.google.com/mail/u/0/#inbox" class="twolinks">
+                Gmail
+            </a>
+			<a target="blank" href="https://images.google.com/" class="twolinks">
+                Images
+            </a>
+			<a href="apps" id="ninedots"></a>
+			<a href="" id="notif"></a>
+			<a href="https://myaccount.google.com/?pli=1" target="blank">
+				<div id="name-div">
+					<p>E</p>
+				</div>
+			</a>
+		</div>
+		<div id="center-div">
+			<img src="data:image/png;base64,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" id="logo" />
+			<p id="canada">Canada</p>
+			<input type="text" id="searchbox" />
+			<a href="">
+				<div class="twobuttons" style="left: 200px;">
+					<p>Google Search</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="twobuttons" style="left: 355px;">
+					<p>I'm Feeling Lucky</p>
+				</div>
+			</a>
+		</div>
+		<div id="language">
+			<p>Google.ca offered in: <a href="https://www.google.fr/" id="french" target="blank">Francais</a> </p>
+		</div>
+		<div id="nav-bottom">
+			<div id="nav-bottom-left">
+				<a href="" class="nav-bottom-a">
+                    Advertising
+                </a>
+				<a href="" class="nav-bottom-a">
+                    Business
+                </a>
+				<a href="" class="nav-bottom-a">
+                    About
+                </a>
+			</div>
+			<div id="nav-bottom-right">
+				<a href="" class="nav-bottom-a">
+                    Privacy
+                </a>
+				<a href="" class="nav-bottom-a">
+                    Terms
+                </a>
+				<a href="" class="nav-bottom-a">
+                    Settings
+                </a>
+				<a href="" class="nav-bottom-a">
+                    Use Google.com
+                </a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

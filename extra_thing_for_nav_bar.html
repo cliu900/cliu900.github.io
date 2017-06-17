@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#container {
+			display: inline-block;
+			width: 100%;
+			height: auto;
+			background-color: powderblue;
+			font-family: arial;
+			font-variant: small-caps;
+			color: darkgray;
+			padding-top: 5px;
+		}
+		
+		#company {
+			float: left;
+			font-weight: bold;
+		}
+		
+		#nav {
+			float: right;
+		}
+		
+		@media screen and (max-width: 992px) {
+			float: none;
+			#container {
+				height: 70px;
+			}
+			#company+#nav {
+				float: left;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="company">Teens Programming</div>
+		<div id="nav">technologies courses about contact</div>
+	</div>
+</body>
+</html>

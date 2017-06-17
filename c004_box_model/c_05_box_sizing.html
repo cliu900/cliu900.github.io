@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>box sizing and other stuff</title>
+	<style>
+		#container {
+			height: 200px;
+			background: yellow;
+			width: 404px;
+		}
+		
+		#left {
+			width: 200px;
+			background-color: indianred;
+			height: 200px;
+			display: inline-block;
+			padding: 10px;
+			border: solid 10px;
+			box-sizing: border-box;
+		}
+		
+		#right {
+			width: 200px;
+			background-color: aqua;
+			height: 200px;
+			display: inline-block;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="left"></div>
+		<!-- 
+        -->
+		<div id="right"></div>
+	</div>
+</body>
+
+</html>

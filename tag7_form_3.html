@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		input {
+			width: 100px;
+		}
+		
+		button img {
+			width: 100px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Form 3</title>
+</head>
+
+<body>
+	<form action="#">
+		<input type="Submit" value="OK">
+		<input type="Button" value="abc" onclick="alert('hello guys')">
+		<input id='imgbtn' type="image" src="https://upload.wikimedia.org/wikipedia/commons/7/71/2010-kodiak-bear-1.jpg">
+		<br>
+		<button>
+		
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bear_Alaska_%283%29.jpg/220px-Bear_Alaska_%283%29.jpg" alt="">
+			<span>Image Button</span>
+		</button>
+	</form>
+
+	<script>
+		var imgbtn = document.getElementById('imgbtn');
+
+		imgbtn.addEventListener('click', changeimg);
+
+		function changeimg(e) {
+			e.preventDefault();
+			imgbtn.src = 'https://images-na.ssl-images-amazon.com/images/I/81ZPqnOryZL._SL1500_.jpg';
+		}
+	</script>
+</body>
+
+</html>
