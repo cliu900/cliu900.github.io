@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#interests {
+			/*			color: blue;*/
+		}
+		
+		ul {
+			font-size: 3em;
+			color: yellow !important;
+		}
+		
+		body ul {
+			color: chartreuse !important;
+		}
+		
+		.list {
+			color: red;
+		}
+		
+		[data='whatido'] {
+			color: chocolate;
+		}
+		
+		ul li {
+			color: dimgray;
+		}
+		
+		ul>li {
+			color: aquamarine;
+		}
+		
+		span {
+			color: darksalmon;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Classes have higher priority than tags.</h1>
+	<h1>Class and Attribute have same priority. it's whoever cames later is shown.</h1>
+	<h1>Inline style has one of the highest priorities.</h1>
+	<h1>!important is important, it has the highest priority.</h1>
+	<h2>if priority the same, then order matters.
+	</h2>
+	<h2>long path is larger than short path.</h2>
+	<ul class="list" id="interests" data='whatido' style="color: black">
+		<li>Bears <span>with Bears</span></li>
+		<li>Bears</li>
+		<li>Bears</li>
+		<li>Bears</li>
+	</ul>
+</body>
+</html>
