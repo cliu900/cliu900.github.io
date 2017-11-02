@@ -4,34 +4,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap Template</title>
-	<!--	bootstrap-->
+	<!--    bootstrap-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- font awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!-- device mockup	-->
+	<!-- device mockup    -->
 	<link rel="stylesheet" href="device-mockups/device-mockups.css">
 	<!-- google font-->
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+
+	<!--    simple line icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 	<style>
-		/*		customize navbar */
-		
+		/*   	 customize navbar */
+
 		.navbar-default {
 			background-color: white;
 			border-color: white;
 		}
-		
+
 		.navbar-default .navbar-brand:hover {
 			color: #fdcc52;
 		}
-		/*		jumbotron */
-		
+
+		/*   	 jumbotron */
+
 		#banner {
 			background: url(img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
 			color: white;
 			text-align: center;
-			padding: 100px 0;
+			padding: 200px 0;
+			font-size: 80px;
 		}
-		
+
 		#banner h1 {
 			font-family: 'Catamaran', sans-serif;
 			font-size: 30px;
@@ -39,117 +45,196 @@
 			max-width: 458px;
 			margin: auto;
 		}
-		
+
 		.screen img {
 			width: 100%;
 		}
-		
+
 		.mybtn {
 			background-color: transparent;
 		}
-		
+
 		.mybtn:hover {
 			background-color: #fdcc52;
 		}
-		
+
 		.device-wrapper {
 			margin: auto;
 			margin-top: 100px;
+
+
 		}
-		
+
 		@media screen and (min-width: 768px) {
 			.jumbotron h1 {
 				font-size: 50px;
 			}
 			.device-wrapper {
 				margin-top: -80px;
+				width: 100%;
+				margin: auto;
 			}
 		}
-		
+
 		#app {
-			background-color: #ffc107;
-			;
-			height: 300px;
-		}
-		
-		.googleandapp {
-			width: 20%;
-			margin: auto;
-			position: absolute;
-		}
-		
-		.jumbotron {
+			background-color: #fdc539;
+			height: 600px;
 			text-align: center;
 		}
-		
+
+		.googleandapp {
+			width: 20%;
+			font-family: Catamaran;
+			padding-top: 20px;
+			display: inline-block;
+
+		}
+
+		.num2 {
+			text-align: center;
+			font-size: 400%;
+			font-family: Catamaran;
+			padding-top: 200px;
+		}
+
+		.num3 {
+			text-align: center;
+			font-size: 200%;
+			font-family: Catamaran;
+			padding-top: 40px;
+		}
+
+
+
 		.unlimited1 {
 			text-align: center;
 		}
-		
+
 		.unlimited {
 			text-align: center;
 			color: gray;
 		}
-		
+
 		.headerforthing {
 			text-align: center;
 		}
-		
+
 		.subheaderforthing {
 			color: gray;
 			text-align: center;
 		}
-		
+
 		.ending {
 			text-align: center;
+			font-family: Catamaran;
+			color: white;
+			font-size: 60px;
+
 		}
-		
+
 		.ending2 {
 			margin: auto;
 			display: block;
 			color: white;
 			border-color: white;
 			background-color: transparent;
-			border-radius: 30%;
+			border-radius: 50px;
+			width: 200px;
+			height: 50px;
+
 		}
-		
+
+		/*   	 jumbotron 2 */
+
+		.jumbotron2 {
+			background-image: url(https://blackrockdigital.github.io/startbootstrap-new-age/img/bg-cta.jpg);
+			background-size: cover;
+			padding: 200px 0;
+			position: relative;
+		}
+
+		#overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.2;
+		}
+
+		/*   	 jumbotron 4 */
+
 		.jumbotron4 {
-			height: 300px;
-			background-color: darkgoldenrod;
+			background-color: #fdc539;
 			display: block;
+			text-align: center;
+			padding: 100px 0;
 		}
-		
-		.final {
+
+		.jumbotron4 button {
 			margin: auto;
 			display: block;
+			border-radius: 100%;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+		}
+
+		#final {
 			background-color: lightblue;
-			border-radius: 50%;
 		}
-		
-		.final1 {
-			margin: auto;
-			display: block;
+
+		#final1 {
 			background-color: blue;
-			border-radius: 50%;
 		}
-		
-		.final2 {
-			margin: auto;
-			display: block;
+
+		#final2 {
 			background-color: red;
-			border-radius: 50%;
 		}
-		
+
+		.icon-social-twitter {
+
+			color: white;
+		}
+
+		.icon-social-facebook {
+			color: white;
+
+		}
+
+		.icon-social-google {
+			color: white;
+		}
+
+
 		.final5 {
 			text-align: center;
 		}
-		
+
+		/* jumbotron 5*/
+
 		.jumbotron5 {
 			background-color: black;
+			height: 100px;
 		}
-		
+
 		.end {
 			text-align: center;
+			padding-top: 30px;
+		}
+
+		.icon-screen-smartphone {
+			color: linear-gradient(to left, #7b4397, #dc2430);
+		}
+
+
+		.thumbnail {
+			text-align: center;
+		}
+
+		.icon-social-twitter .icon-social-facebook .icon-social-google {
+			background-color: white;
 		}
 
 	</style>
@@ -167,9 +252,9 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-					Menu <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
+    	<span class="sr-only">Toggle navigation</span>
+   				 Menu <i class="fa fa-bars" aria-hidden="true"></i>
+  	</button>
 				<a class="navbar-brand" href="#">Start Bootstrap</a>
 			</div>
 
@@ -206,16 +291,21 @@
 			</div>
 		</div>
 	</div>
-	<div id='app' class="jumbotron">
-		<h1 class="num2">Discover What All the Buzz is About!</h1>
-		<p class="num2">Our app is availible on any mobile device! Download now to get started!</p>
+	<div id='app'>
+		<h1 class="num2 ">Discover What All the Buzz is About!</h1>
+		<p class="num3">Our app is availible on any mobile device! Download now to get started!</p>
 
-		<img class="googleandapp" src="img/google-play-badge.svg" alt="">
-		<img class="googleandapp" src="img/app-store-badge.svg" alt="">
+		<img class="googleandapp " src="img/google-play-badge.svg " alt=" ">
+		<img class="googleandapp " src="img/app-store-badge.svg " alt=" ">
 	</div>
-	<h1 class="unlimited1">Unlimited Features, Unlimited Fun </h1>
-	<h6 class="unlimited">Check out what you can do with this app theme!</h6>
-	<div class="screen">
+	<h1 class="unlimited1 ">Unlimited Features, Unlimited Fun </h1>
+	<h6 class="unlimited ">Check out what you can do with this app theme!</h6>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="row ">
 		<div class="col-xs-12 col-sm-5">
 			<div class="device-wrapper">
 				<div class="device" data-device="iPhone6Plus" data-orientation="portrait" data-color="white">
@@ -228,66 +318,69 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-				<h3 class="headerforthing">Device Mockups</h3>
-				<h5 class="subheaderforthing">Ready to use HTML/CSS device mockups, no Photoshop required!</h5>
-				<br>
+		<div class="col-xs-12 col-sm-7 ">
+			<div class="col-sm-6 ">
+				<div class="thumbnail ">
+					<span class='icon-screen-smartphone'></span>
+					<h3 class="headerforthing ">Device Mockups</h3>
+					<h5 class="subheaderforthing ">Ready to use HTML/CSS device mockups, no Photoshop required!</h5>
+					<br>
 
+				</div>
 			</div>
-			<div class="thumbnail">
-				<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-				<h3 class="headerforthing">Flexible Use</h3>
-				<h5 class="subheaderforthing">Put an image, video, animation, or anything else in the screen!</h5>
-				<br>
+			<div class="col-sm-6 ">
+				<div class="thumbnail ">
+					<span class="icon-camera " aria-hidden="true "></span>
+					<h3 class="headerforthing ">Flexible Use</h3>
+					<h5 class="subheaderforthing ">Put an image, video, animation, or anything else in the screen!</h5>
+					<br>
 
+				</div>
 			</div>
-			<div class="thumbnail">
-				<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-				<h3 class="headerforthing">Open Source</h3>
-				<h5 class="subheaderforthing">As always, this theme is free to download and use for any purpose!</h5>
-				<br>
+			<div class="col-sm-6 ">
+				<div class="thumbnail ">
+					<span class="glyphicon glyphicon-gift " aria-hidden="true "></span>
+					<h3 class="headerforthing ">Free to Use</h3>
+					<h5 class="subheaderforthing ">As always, this theme is free to download and use for any purpose!</h5>
+					<br>
 
+				</div>
 			</div>
 
-			<div class="jumbotron2"></div>
-			<div class="thumbnail">
-				<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-				<h3 class="headerforthing">Open Source</h3>
-				<h5 class="subheaderforthing">Since this theme is MIT licensed, you can use it comercially!</h5>
-				<br>
+			<!--   		 <div class="jumbotron2 "></div>-->
+			<div class="col-sm-6 ">
+				<div class="thumbnail ">
+					<span class="glyphicon glyphicon-lock " aria-hidden="true "></span>
+					<h3 class="headerforthing ">Open Source</h3>
+					<h5 class="subheaderforthing ">Since this theme is MIT licensed, you can use it comercially!</h5>
+					<br>
 
+				</div>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="jumbotron2">
+	<div class="jumbotron2 ">
 		<!--I can't find a url or anything for this background photo-->
 		<h1 class="ending">Stop waiting</h1>
 		<h1 class="ending">Start building</h1>
 		<button class="ending2">Let's Get Started</button>
+
+		<div id="overlay "></div>
 	</div>
-	<div class="jumbotron4">
-
-		<h1 final5>We Love New Friends!</h1>
-		<button class="final">Twitter</button>
-		<button class="final1">Facebook</button>
-		<button class="final2">Google</button>
-
+	<div class="jumbotron4 ">
+		<h1>We Love New Friends!</h1>
+		<button id="final" class="icon-social-twitter"></button>
+		<button id="final1" class="icon-social-facebook"></button>
+		<button id="final2" class="icon-social-google"></button>
 	</div>
-	<div jumbotron5>
-		<h6 class="end">Copyright 2017 Start Bootstrap. All Rights Reserved.</h6>
-		<h6 class="end">Privacy Terms FAQ</h6>
+	<footer class=jumbotron5>
+		<h6 class="end ">Copyright 2017 Start Bootstrap. All Rights Reserved.</h6>
+		<h6 class="end ">Privacy Terms FAQ</h6>
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js " integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=" anonymous "></script>
 
-
-	</div>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
 </body>
 
 </html>
