@@ -24,8 +24,9 @@
 			border-color: white;
 		}
 
-		.navbar-default .navbar-brand:hover {
-			color: #fdcc52;
+		.navbar-brand {
+			color: black;
+
 		}
 
 		/*   	 jumbotron */
@@ -194,17 +195,19 @@
 		}
 
 		.icon-social-twitter {
-
+			font-size: 50px;
 			color: white;
 		}
 
 		.icon-social-facebook {
 			color: white;
+			font-size: 50px;
 
 		}
 
 		.icon-social-google {
 			color: white;
+			font-size: 50px;
 		}
 
 
@@ -217,6 +220,7 @@
 		.jumbotron5 {
 			background-color: black;
 			height: 100px;
+			margin-top: 0px;
 		}
 
 		.end {
@@ -224,17 +228,50 @@
 			padding-top: 30px;
 		}
 
-		.icon-screen-smartphone {
-			color: linear-gradient(to left, #7b4397, #dc2430);
+		.icon-screen-smartphone .glyphicon {
+			font-size: 50px;
 		}
 
 
 		.thumbnail {
 			text-align: center;
+			width: 50% auto;
+
 		}
 
-		.icon-social-twitter .icon-social-facebook .icon-social-google {
+
+
+		#heart {
+			background-color: transparent;
+			border: none;
+			color: red;
+		}
+
+		.startertitle {
+			font-size: 400px;
+		}
+
+		.mybtn {
+			width: 35%;
+			height: 40px;
+			border-radius: 20%;
+		}
+
+		.navbar-navbar-default {
+			overflow: hidden;
+			position: fixed;
 			background-color: white;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#bs-example-navbar-collapse-1 {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			text-decoration: none;
 		}
 
 	</style>
@@ -247,7 +284,7 @@
 
 		<div class="col-xs-12 col-sm-6"></div>
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="navbar-navbar-default">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -273,7 +310,7 @@
 	<div id='banner' class="jumbotron">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7">
-				<h1 class="startertitle">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+				<h1 class="startertitle"><big>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</big></h1>
 
 				<button class="btn btn-primary mybtn">Start Now For Free</button>
 			</div>
@@ -320,7 +357,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 ">
 			<div class="col-sm-6 ">
-				<div class="thumbnail ">
+				<div class="thumbnail">
 					<span class='icon-screen-smartphone'></span>
 					<h3 class="headerforthing ">Device Mockups</h3>
 					<h5 class="subheaderforthing ">Ready to use HTML/CSS device mockups, no Photoshop required!</h5>
@@ -330,7 +367,7 @@
 			</div>
 			<div class="col-sm-6 ">
 				<div class="thumbnail ">
-					<span class="icon-camera " aria-hidden="true "></span>
+					<span class="glyphicon glyphicon-camera" aria-hidden="true "></span>
 					<h3 class="headerforthing ">Flexible Use</h3>
 					<h5 class="subheaderforthing ">Put an image, video, animation, or anything else in the screen!</h5>
 					<br>
@@ -361,7 +398,7 @@
 	</div>
 
 	<div class="jumbotron2 ">
-		<!--I can't find a url or anything for this background photo-->
+
 		<h1 class="ending">Stop waiting</h1>
 		<h1 class="ending">Start building</h1>
 		<button class="ending2">Let's Get Started</button>
@@ -369,7 +406,7 @@
 		<div id="overlay "></div>
 	</div>
 	<div class="jumbotron4 ">
-		<h1>We Love New Friends!</h1>
+		<h1>We <button id="heart" class="icon-heart"></button> New Friends!</h1>
 		<button id="final" class="icon-social-twitter"></button>
 		<button id="final1" class="icon-social-facebook"></button>
 		<button id="final2" class="icon-social-google"></button>
