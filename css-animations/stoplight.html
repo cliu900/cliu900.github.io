@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body {
+			height: 600px;
+		}
+
+		.container {
+			height: 440px;
+			width: 200px;
+			background-color: gray;
+			border-radius: 10%;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+
+		.first {
+			height: 120px;
+			width: 120px;
+			background-color: darkgrey;
+			border-radius: 50%;
+			margin: auto;
+			position: relative;
+			top: 10px;
+			transition-delay: 2s;
+		}
+
+		.second {
+			height: 120px;
+			width: 120px;
+			background-color: darkgrey;
+			border-radius: 50%;
+			margin: auto;
+			margin-top: 20px;
+
+		}
+
+		.third {
+			height: 120px;
+			width: 120px;
+			background-color: forestgreen;
+			border-radius: 50%;
+			margin: auto;
+			margin-top: 20px;
+
+		}
+
+		body:hover .first {
+			background-color: red;
+		}
+
+		body:hover .second {
+			background-color: yellow;
+
+		}
+
+		body:hover .third {
+			background-color: darkgray;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="first"></div>
+		<div class="second"></div>
+		<div class="third"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			border: solid;
+			height: 70px;
+		}
+
+		div {
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			background-color: yellow;
+			/*			transition: left 1s linear;*/
+			position: absolute;
+			left: 10px;
+			transition: left;
+			transition-duration: 1s;
+			transition-timing-function: linear;
+		}
+
+		body:hover div {
+			left: 550px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div></div>
+</body>
+
+</html>

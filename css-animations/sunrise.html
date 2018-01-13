@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			height: 302px;
+			transition: 10s;
+			background: linear-gradient(to top, red, lightblue);
+		}
+
+		.ground {
+			margin-left: -10px;
+			padding-left: -10px;
+			padding-right: -10px;
+			padding-right: -10px;
+			bottom: 0px;
+			height: 250px;
+			width: 100%;
+			background-color: green;
+			position: absolute;
+			z-index: 0;
+		}
+
+		.mountain1 {
+			width: 0;
+			height: 0;
+			border-left: 100px solid transparent;
+			border-right: 100px solid transparent;
+			border-bottom: 110px solid darkblue;
+			margin-top: 280px;
+			margin-left: 200px;
+			z-index: 40;
+		}
+
+		.mountain2 {
+			width: 0;
+			height: 0;
+			border-left: 170px solid transparent;
+			border-right: 170px solid transparent;
+			border-bottom: 170px solid darkblue;
+			margin-top: -150px;
+			margin-left: 300px;
+			z-index: 40;
+		}
+
+
+		.sun {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			background: yellow;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-left: 100px;
+			z-index: -1;
+			transition: 5s;
+		}
+
+		body:hover .sun {
+			transform: translate(400px, -400px);
+		}
+
+		html:hover body {
+			background: linear-gradient(to top, black, lightblue);
+		}
+
+		.cloud {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			background: white;
+			border-radius: 50%;
+		}
+
+		.cloud1 {
+			margin-top: -400px;
+			margin-left: 220px;
+		}
+
+		.cloud2 {
+			margin-top: -400px;
+			margin-left: 140px;
+		}
+
+		.cloud3 {
+			margin-top: -360px;
+			margin-left: 160px;
+		}
+
+		.cloud4 {
+			margin-top: -360px;
+			margin-left: 100px;
+		}
+
+		.cloud5 {
+			margin-top: -400px;
+			margin-left: 40px;
+		}
+
+		.cloud6 {
+			margin-top: -360px;
+			margin-left: 40px;
+		}
+
+		.cloud7 {
+			margin-top: -320px;
+			margin-left: 40px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="ground"></div>
+	<div class="mountain1"></div>
+	<div class="mountain2"></div>
+	<div class="sun"></div>
+	<div class="cloud cloud1"></div>
+	<div class="cloud cloud2"></div>
+	<div class="cloud cloud3"></div>
+	<div class="cloud cloud4"></div>
+	<div class="cloud cloud5"></div>
+	<div class="cloud cloud6"></div>
+	<div class="cloud cloud7"></div>
+</body>
+
+</html>

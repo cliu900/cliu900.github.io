@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.bgc {
+			height: 600px;
+			width: 600px;
+			border-radius: 10%;
+			background-color: lightblue;
+			position: absolute;
+			transform: rotate(180deg);
+		}
+
+		.clock {
+			margin: auto;
+			border-radius: 50%;
+			background-color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 70%;
+			width: 70%;
+			margin: -35% 0 0 -35%;
+		}
+
+		.one {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			margin-left: 200px;
+			margin-top: 10px;
+			transform: rotateZ(90deg);
+			display: inline-block;
+		}
+
+		.two {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			margin-left: 300px;
+			margin-top: 38px;
+			transform: rotateZ(120deg);
+			display: inline-block;
+		}
+
+		.three {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 368px;
+			margin-top: 98px;
+			transform: rotateZ(150deg);
+		}
+
+		.four {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 400px;
+			margin-top: 190px;
+			transform: rotateZ(180deg);
+		}
+
+		.five {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 385px;
+			margin-top: 290px;
+			transform: rotateZ(210deg);
+		}
+
+		.six {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 310px;
+			margin-top: 378px;
+			transform: rotateZ(240deg);
+		}
+
+		.seven {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 210px;
+			margin-top: 410px;
+			transform: rotateZ(270deg);
+		}
+
+		.eight {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 100px;
+			margin-top: 380px;
+			transform: rotateZ(300deg);
+		}
+
+		.nine {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 30px;
+			margin-top: 310px;
+			transform: rotateZ(330deg);
+		}
+
+		.ten {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 0px;
+			margin-top: 220px;
+			transform: rotateZ(360deg);
+		}
+
+		.eleven {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 30px;
+			margin-top: 110px;
+			transform: rotateZ(390deg);
+		}
+
+		.twelve {
+			height: 2px;
+			width: 20px;
+			background-color: black;
+			position: absolute;
+			display: inline-block;
+			margin-left: 100px;
+			margin-top: 40px;
+			transform: rotateZ(420deg);
+		}
+
+		.minute {
+			animation: minute 7200s infinite 1s;
+			animation-timing-function: steps(60, end);
+			transform-origin: bottom;
+			height: 170px;
+			width: 10px;
+			background-color: yellowgreen;
+			position: absolute;
+			margin-top: 35px;
+			margin-left: 202px;
+		}
+
+		.hour {
+			animation: hour 86400s infinite 1s;
+			animation-timing-function: steps(12, end);
+			transform-origin: left;
+			height: 10px;
+			width: 130px;
+			background-color: red;
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 210px;
+		}
+
+		.second {
+			animation: second 120s infinite 1s;
+			animation-timing-function: steps(60, end);
+			transform-origin: top;
+			height: 170px;
+			width: 10px;
+			background-color: black;
+			position: absolute;
+			margin-top: 205px;
+			margin-left: 202px;
+		}
+
+		.dot {
+			width: 20px;
+			height: 20px;
+			background-color: blue;
+			border-radius: 50%;
+			position: absolute;
+			margin-top: 195px;
+			margin-left: 195px;
+		}
+
+		@keyframes second {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes minute {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes hour {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bgc">
+		<div class="clock">
+			<div class="minute"></div>
+			<div class="hour"></div>
+			<div class="second"></div>
+			<div class="dot"></div>
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+			<div class="four"></div>
+			<div class="five"></div>
+			<div class="six"></div>
+			<div class="seven"></div>
+			<div class="eight"></div>
+			<div class="nine"></div>
+			<div class="ten"></div>
+			<div class="eleven"></div>
+			<div class="twelve"></div>
+		</div>
+	</div>
+</body>
+</html>

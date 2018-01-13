@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.surface {
+			width: 600px;
+			height: 300px;
+			border: double yellow;
+			text-align: center;
+			perspective: 400px;
+
+		}
+
+		.container {
+			width: 300px;
+			height: 100%;
+			border: solid red;
+			/*			margin: auto;*/
+			font-size: 4em;
+			color: tomato;
+			perspective: 400px;
+		}
+
+		.panel {
+			height: 100%;
+			background-color: #067;
+			transform: rotateX(50deg);
+			transform-origin: bottom;
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="surface">
+		<div class="container">
+			<div class="panel">
+				Panel
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

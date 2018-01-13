@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body {
+			background-color: yellow;
+		}
+
+		.first,
+		.second {
+			display: inline-block;
+
+		}
+
+		div {
+			width: 200px;
+			height: 200px;
+			border: solid 10px gray;
+			margin-left: 80px;
+			transition: 1s;
+		}
+
+		.second {
+			transform: skewX(30deg)
+		}
+
+		.first {
+			transform: skewY(-20deg)
+		}
+	</style>
+</head>
+
+<body>
+	<div class="first"></div>
+	<div class="second"></div>
+</body>
+</html>

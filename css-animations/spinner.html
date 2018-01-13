@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.container {
+			margin-top: 200px;
+			width: 650px;
+
+			perspective: 1500px;
+			transform-style: preserve-3d;
+			margin: auto;
+			margin-top: 200px;
+			animation animation-name: rotate;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+		}
+
+		.container div {
+			width: 500px;
+			position: absolute;
+
+			border: solid 1px;
+			box-shadow: inset 0px 0px 20px;
+			transform-origin: right;
+		}
+
+		.first {}
+
+		.second {
+			transform: rotateY(72deg);
+		}
+
+		.third {
+			transform: rotateY(144deg);
+		}
+
+		.fourth {
+			transform: rotateY(-144deg);
+		}
+
+		.fifth {
+			transform: rotateY(-72deg);
+		}
+
+		img {
+			width: 300px;
+			height: 100px;
+		}
+
+		@keyframes rotate {
+			0% {
+				transform: rotateY(0deg);
+			}
+			100% {
+				transform: rotateY(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="first"><img src="http://3.bp.blogspot.com/-M_R7m49jST8/UYzYtfqwdZI/AAAAAAAABdo/rZIxhKdv1VQ/s1600/30.+A+little+red+panda+by+Harimao+Lee.jpg" alt=""></div>
+		<div class="second"><img src="https://s-media-cache-ak0.pinimg.com/originals/bc/d3/ea/bcd3ea983ad650fafe063e72f2bc9cc7.jpg" alt=""></div>
+		<div class="third"><img src="https://i.pinimg.com/736x/93/0a/1e/930a1eb0074a5a08d101880bcd44297c--baby-cubs-baby-bears.jpg" alt=""></div>
+		<div class="fourth"><img src="http://i.dailymail.co.uk/i/pix/2015/08/27/13/2BB50B8E00000578-3212873-image-a-23_1440680286191.jpg" alt=""></div>
+		<div class="fifth"><img src="http://4.bp.blogspot.com/-GWWPh6nw4xA/UdRKKuZbrQI/AAAAAAAAITk/-Y0LVDZnhDE/s800/2013-06-07RHawk162SlothBearCub.jpg" alt=""></div>
+	</div>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		div {
+			width: 20px;
+			height: 300px;
+			background-color: white;
+
+
+			animation: move 4s both 1s;
+			animation-timing-function: step-start;
+			animation-timing-function: steps(4, start);
+
+		}
+
+		@keyframes move {
+			0% {
+				transform: translateX(100px);
+			}
+
+			100% {
+				transform: translateX(500px);
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div></div>
+
+</body>
+</html>
+

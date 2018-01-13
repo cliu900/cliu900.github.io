@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.tab {
+			text-align: center;
+
+		}
+
+		.tab img {
+			width: 100%;
+			position: absolute;
+			left: 0px;
+			opacity: 0;
+			transition: all 2s;
+
+		}
+
+		.tab a {
+			text-decoration: none;
+		}
+
+		div:target img {
+			opacity: 1;
+		}
+
+		a {
+			font-size: 50px;
+			margin: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="tab">
+		<a href="#img1">I</a>
+		<a href="#img2">II</a>
+		<a href="#img3">III</a>
+
+		<div id="img1">
+			<img src="https://www.moooi.com/sites/default/files/styles/large/public/product-images/random_detail.jpg?itok=ErJveZTY" alt="">
+		</div>
+		<div id="img2">
+			<img src="https://ichef-1.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" alt="">
+		</div>
+
+		<div id="img3">
+			<img src="https://vignette.wikia.nocookie.net/dragonballfanon/images/7/70/Random.png/revision/latest?cb=20161221030547" alt="">
+		</div>
+	</div>
+</body>
+</html>

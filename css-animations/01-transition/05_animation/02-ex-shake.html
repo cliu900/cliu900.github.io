@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		img {
+			width: 300px;
+			border-radius: 50%;
+			margin-left: 100px;
+		}
+
+		@keyframes shake {
+			0% {
+				left: -10px;
+				border-right: solid 10px;
+			}
+			100% {
+				left: 10px;
+				border-left: solid 10px;
+			}
+		}
+
+		img:hover {
+			animation-name: shake;
+			animation-duration: 0.001s;
+			animation-iteration-count: infinite;
+		}
+
+	</style>
+</head>
+
+<body>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOPxAKi7biEdbV0Owu52M1ts5Qf-dXXB_qMBmuYlK4GMsl4fBBGQ" alt="">
+</body>
+
+</html>

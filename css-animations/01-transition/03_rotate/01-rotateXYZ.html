@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.rotate {
+			width: 100px;
+			height: 200px;
+			background-color: #000;
+			color: white;
+			font-size: 4em;
+			display: inline-block;
+			transition: 1s;
+
+		}
+
+		.rotate1 {
+			transform: rotateX(440deg);
+			transform-origin: bottom;
+		}
+
+		.container {
+			perspective: 400px;
+
+			text-align: center;
+		}
+
+		.rotate2 {
+			transform: rotateY(430deg);
+			transform-origin: left;
+		}
+
+		.rotate3 {
+			transform: rotateZ(300deg);
+			/*			transform-origin: top;*/
+			transform-origin: 20px 30px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="rotate rotate1">X</div>
+		<div class="rotate rotate2">Y</div>
+		<div class="rotate rotate3">Z</div>
+	</div>
+
+
+</body>
+
+</html>

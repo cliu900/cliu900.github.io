@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		img {
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			border: double black;
+		}
+
+		div:hover .first {
+			transform: scale(2) translate(50px, 50px);
+			transition: 4s;
+		}
+
+		div:hover .second {
+			transform: scale(2) translate(0px, 50px);
+			transition: 4s;
+		}
+
+		div:hover .third {
+			transform: scale(2) translate(-50px, 50px);
+			transition: 4s;
+		}
+
+		div:hover .fourth {
+			transform: scale(2) translate(50px, 0px);
+			transition: 4s;
+		}
+
+		div:hover .fifth {
+			transform: scale(2);
+			transition: 4s;
+		}
+
+		div:hover .sixth {
+			transform: scale(2) translate(-50px, 0px);
+			transition: 4s;
+		}
+
+		div:hover .seventh {
+			transform: scale(2) translate(50px, -50px);
+			transition: 4s;
+		}
+
+		div:hover .eighth {
+			transform: scale(2) translate(0px, -50px);
+			transition: 4s;
+		}
+
+		div:hover .ninth {
+			transform: scale(2) translate(-50px, -50px);
+			transition: 4s;
+		}
+
+
+
+		div {
+			display: inline-block;
+			height: 100px;
+		}
+
+		body {
+			width: 400px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<img class="first" src="https://i.kinja-img.com/gawker-media/image/upload/s--XkYSDzxz--/c_scale,fl_progressive,q_80,w_800/hflvykipmc5g22mc3m0m.jpg" alt="">
+	</div>
+	<div>
+		<img class="second" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAP+KeNJXAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="">
+	</div>
+	<div>
+		<img class="third" src="http://is3.mzstatic.com/image/thumb/Purple128/v4/c6/a2/81/c6a281d1-28ec-4c5d-3db9-e1853755f431/source/1200x630bb.jpg" alt="">
+	</div>
+	<div>
+
+		<img class="fourth" src="https://vignette.wikia.nocookie.net/symbolism/images/4/43/Orange.png/revision/latest?cb=20140818120046" alt="">
+	</div>
+	<div>
+		<img class="fifth" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Libya_%281977-2011%29.svg/2000px-Flag_of_Libya_%281977-2011%29.svg.png" alt="">
+	</div>
+	<div>
+		<img class="sixth" src="https://i.imgur.com/ZFkNtQe.jpg" alt="">
+	</div>
+	<div>
+		<img class="seventh" src="data:image/jpe
+	g;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRUVFRUVFxUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8PFS0dFR0tLS0tLSstLS0tLS0tLS0tLS0tKy0tLS03LS03LS03LSstLS0tKy0tNzctLSs3LS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGhABAQEBAAMAAAAAAAAAAAAAAAEREgJBcf/EABgBAQEAAwAAAAAAAAAAAAAAAAABAgUH/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDOKDaOboqKCKGggQoALAUARCxSghEUURSAhigJRQBBQA1IAFABoCs1SoCglA0highFSAqSqgLKqRRBFQAoCoaALoABEUBKUwAUBIqRQNRUBQlANQMACQoAYAaQAaAECCUDSICqkAFA0A1NAAkJAAMANAEwUBYYRAVAgC9BgBUsAME1oAICLDEIAgoqAYARaQDBKsBMCKB0aYlgLYgAZQ0A0WAICglFANQUECqCxFBBnWoUGVAURaAhqkBBQEFQBRABUBROQBQBBTQENAWIEoCwQGoJFVCFEQRRBVEAVFhQEUBFE0CVYkAKEAUQBUxTAENAJFQwFSACoUgLIsCiCKAmhpBRIqQFKiglWQxAVAgKRABUKBoIDURYAmLpqAshiWG0DA1aCAoKgCLqUUGYogoACpBYCCmgb6JELAXEw2mgqLUAF5iAQFBFiLgAigWIAIoYCigiCoKgoCCpAVIYAVUAIpiApYgAAALoAACKYACAKlIAVcRYChBUIUgggiilMNIACAqKAGCAokIC1FQF5+AAVFSgqVUBGkWAmECAqKkBYoCCKmAACoBAUAARQKgAGKgEVIoGCaApqQA0q4mgQNXAQxcQCkFAFBCAgIsAUSACiGAupouAhDTQVGsTATChATBdAWGoAqQIBYYugItpUAVMAUICKmmAJoKKgABFSAtolIBFxIoJhV0oJoAKi4AmC6AQRQRcIaCUIUAFBUUEQxYUEJEUURaAJigJVEBUFASrqQDBagINAVGgDUIAIABEAFUAWAKhCgggAoQBAQFaQAPFAAWACIAroAMH/9k=" alt=""></div>
+	<div>
+		<img class="eighth" src="https://wallpapercave.com/wp/sbBtVcq.jpg" alt=""></div>
+	<div>
+		<img class="ninth" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUXFRUVFxcVFxcVFRcVFxcXFxcXFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRk3Ny03Ny0rKy0tNys3NysrLTctLS0tLSs3Ky03KzctKysrKysrLS0rLSsrLS0rLSsrK//AABEIALgBEgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EAB8QAQEBAAEEAwEAAAAAAAAAAAABEQISIVFhQXGB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9Cioi1BaqNVARoKAg1WQUOrRaC6hcGig0YJCCwG0aAFNFBCFWgLBTrPUBhlZpgKiqRAhCNAaqkBkEkJAyKCNAiCDpYYIqDTK1AqpGWqCqFqA1mxagFWDfCAyKKU6CiQ0FaybQCxWqgFq6VIgS2M6eINYzViAKrABq0HQJEVoGwxKAdRQN8aLREBF5C1Wgj1M6gaTOmgRiALAMMgGLVKtA6EAVBZBrjRpAEVLAEkWQyxWAFTEDMFbWAysOLQCKA8WgYC1Hp/u4BaYFoAStVig1qZp6gKg1aBSkMAGLb6FoFM4QMCAG0Q2swDqt7qKAcGm1nQK0aIDUqEIJasAGiKKgpWhKoDUQhBrPpM/iAG1nTagdZprNUUTJwCZBqAqqKAkgDQwICgYABogGDPJomg1o5VCgJGot9KAFyUqBG0YoBhwKUEkcAxJQG9noM4QZolUUQNZtIAUwRUGodZhxQ1RRIDFVV3UOiwqgII0qADTIIz2KgNjJpAdgUCi1RAqhUDVQiwDp1laDWGsyHQJGJBzhEOAuTLVACNKLQRgIIsxAYp9pQDIqlaAxWq1YCtGKgDEooAkKzwgGGUfigEVIBVUgWkIDpGoGohhA9XtBAzI1oZgEVCAaQoBOgyAVn4kChFOguKqiBRVVUBQqAKiMAWAoAlqBGjRoG0UasAYbRTAMOiEDKqzq0GsQ0AooFAVQoBqFmGA1KWSDSBgAyiGARTgBCkAqIaNA1DVAOgigE1cgAWoLQCIAU6EDVpZ0aDQUANZ6TJBLVEBBFBQxQgjAYBhkBgKqEYBBQM6iMBREAEYgCSgKT5Qt3t8IAKaAQNAM1VqgAtOM6DQ1aNApdvCBpqLECWJAlITgBqKQgsIILFhQBEgKMNQMhoAE0IAxSNYAAaACxmtUUGQaAFZaqwFooiBCVCAkc9AHdJCnEkBOJCFSJASkCMiQLFiQKwYUAsCQJJAqkgFCQGTyzyqQMWJIUYuSQM0JIMjUgSSVH//2Q==" alt="">
+	</div>
+</body>
+
+</html>

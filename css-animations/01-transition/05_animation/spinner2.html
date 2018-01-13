@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#stage {
+			perspective: 1200px;
+			padding-left: 280px;
+			margin-top: 200px;
+		}
+
+		#spinner {
+			transform-style: preserve-3d;
+			transform-origin: 180px 0;
+		}
+
+		#spinner img {
+			position: absolute;
+			border: 1px solid #ccc;
+			background: rgba(255, 255, 255, 0.8);
+			box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+			width: 200px;
+			height: 160px;
+		}
+
+		#one {
+			/*            display:none;*/
+			transform: rotateY(0deg) translateX(180px);
+			padding-left: 160px;
+		}
+
+		#two {
+			/*            display:none;*/
+			transform: rotateY(-72deg) translateX(180px);
+			padding: 0 0 0 160px;
+		}
+
+		#three {
+			/*            display:none;*/
+			transform: rotateY(-144deg) translateX(180px);
+			padding: 0 0 0 160px;
+		}
+
+		#four {
+			/*            display:none;*/
+			transform: rotateY(-216deg) translateX(180px);
+			padding: 0 0 0 160px;
+		}
+
+		#five {
+			/*            display:none;*/
+			transform: rotateY(-288deg) translateX(180px);
+			padding: 0 0 0 160px;
+		}
+
+		@keyframes spinner {
+			from {
+				transform: rotateY(0deg);
+			}
+			to {
+				transform: rotateY(-360deg);
+			}
+		}
+
+		#spinner {
+			animation-name: spinner;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+
+			animation-duration: 5s;
+		}
+
+		#spinner:hover {
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="stage">
+		<div id="spinner">
+			<img id="one" src="../../img/Black_Labrador_1.jpg" width="200" height="160" alt="">
+
+			<img id="two" src="../../img/Black-Retriever-2.jpg" width="213" height="160" alt="">
+
+			<img id="three" src="../../img/Black-Retriever-3.jpg" width="240" height="160" alt="">
+
+			<img id="four" src="../../img/Black-Retriever-4.jpg" width="213" height="160" alt="">
+
+			<img id="five" src="../../img/Black-Retriever-5.jpg" width="238" height="160" alt="">
+		</div>
+	</div>
+</body>
+
+</html>
+
+
