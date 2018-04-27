@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>The History of the Internet</title>
+	<style>
+		body {
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXBzC_QUo5pBA6NJQUYslHwevTAGtuLkftI_SZwvIWxH_KgyeiPQ);
+			height: 1200px;
+		}
+
+		.vertical-menu {
+			width: 200px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.vertical-menu a {
+			background-color: #eee;
+			color: black;
+			display: block;
+			padding: 12px;
+			text-decoration: none;
+		}
+
+		.vertical-menu a:hover {
+			background-color: #ccc;
+
+		}
+
+		.vertical-menu a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		#container {
+			width: 65%;
+			height: 800px;
+			perspective: 1000px;
+			margin: auto;
+			margin-top: 100px;
+			top: 0px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		#card {
+			width: 100%;
+			height: 100%;
+			transition: 2s;
+			border: double black;
+			transform-style: preserve-3d;
+
+		}
+
+		.face {
+			width: 100%;
+			height: 100%;
+			font-size: 1em;
+			color: white;
+			position: absolute;
+
+
+		}
+
+		.front {
+			background-color: white;
+			backface-visibility: hidden;
+			background-image: url();
+			background-size: contain;
+			background-color: #4CAF50;
+		}
+
+		.back {
+			background-color: #4CAF50;
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			background-image: url();
+			background-size: contain;
+			text-align: center;
+			font-size: 2em;
+		}
+
+
+		#container:hover #card {
+			transform: rotateY(180deg);
+		}
+
+
+
+		.maintitlecontainer {
+			background-color: #4CAF50;
+			height: 100px;
+			color: white;
+			text-align: center;
+		}
+
+		.wikistylelist {
+			text-decoration: underline;
+		}
+
+		.fliptitle {
+			font-size: 2em;
+		}
+
+		.submaintitle {
+			color: white;
+			text-align: center;
+		}
+
+		.footerbase {
+			height: 80px;
+			width: 100%;
+			background-color: #4CAF50;
+			bottom: 0px;
+			position: fixed;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			text-decoration-color: aliceblue;
+
+		}
+
+		.backfacetext {
+			text-align: center;
+			color: white;
+			font-size: 18px;
+
+		}
+
+		.knowthememes {
+			width: 70%;
+		}
+
+		.sources {
+			height: 200px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="maintitlecontainer">
+		<h1 class="maintitle">The History of the Internet
+		</h1>
+		<h6>By Charles Liu</h6>
+	</div>
+
+
+
+	<div class="vertical-menu">
+		<a href="00_School-ISP-history-of-internet.html" class="active">Home</a>
+		<a href="00_first-communications.html">Networks That Led to the Internet</a>
+		<a href="#">Merging Networks</a>
+		<a href="#">The Digital Divide</a>
+		<a href="#">The Rise of the Global Internet</a>
+		<a href="#"> The Internet Government</a>
+		<a href="#">Uses and Culture</a>
+		<a href="#">The Mobile Revolution</a>
+	</div>
+	<div id="container">
+		<div id="card">
+			<div class="face front">
+				<ol class="mainpageflip">
+					<center class="fliptitle">Putting all the history into a list, we kinda get this: </center>
+					<li class="wikistylelist">Precursers</li>
+					<li class="wikistylelist">Development of wide area networking</li>
+					<li class="wikistylelist">Inspiration</li>
+					<li class="wikistylelist">Development of Packet Switching</li>
+					<li class="wikistylelist">Networks that led to the Internet</li>
+					<li class="wikistylelist">NPL network</li>
+					<li class="wikistylelist">ARPANET</li>
+					<li class="wikistylelist">Merit network</li>
+					<li class="wikistylelist">CYCLADES</li>
+					<li class="wikistylelist">X.25 and public data networks</li>
+					<li class="wikistylelist">UUCP and Usenet</li>
+					<li class="wikistylelist">Merging the networks and creating the Internet</li>
+					<li class="wikistylelist">TCP/IP</li>
+					<li class="wikistylelist">From ARPANET to NSFNET</li>
+					<li class="wikistylelist">Transition towards the Internet</li>
+					<li class="wikistylelist">TCP/IP goes global</li>
+					<li class="wikistylelist">CERN</li>
+					<li class="wikistylelist">The early global digital divide emerges</li>
+					<li class="wikistylelist">The Rise of the Internet</li>
+					<li class="wikistylelist">World Wide Web and Introduction of of browsers</li>
+					<li class="wikistylelist">Use in the wider society</li>
+					<li class="wikistylelist">Web 2.0</li>
+					<li class="wikistylelist">The mobile revolutuion</li>
+					<li class="wikistylelist">Networking in outer space</li>
+					<li class="wikistylelist">Internet Engineering Task Force</li>
+					<li class="wikistylelist">The Internet Society</li>
+					<li class="wikistylelist">Internet in Governance</li>
+					<li class="wikistylelist">Politicization of the Internet</li>
+					<li class="wikistylelist">Net Neutrality</li>
+					<li class="wikistylelist">Use and culture</li>
+					<li class="wikistylelist">Email and social media</li>
+					<li class="wikistylelist">Search engines</li>
+					<li class="wikistylelist">File sharing</li>
+					<li class="wikistylelist">Mobile phones and the Internet</li>
+					<br>
+					<center>Don't worry, I'll talk about everything later on, in a summary, not in an essay length wikipedia page sized monster.</center>
+				</ol>
+			</div>
+
+			<div class="face back">Introduction
+				<div class="backfacetext"> Humankind has come a long way. we span across an entire 510 million kilometers squared of earth and water. But, we needed a reliable way to communicate over our vast landscape. It's kinda funny that the Internet started when the USA Defense Department needed a reliable communication in case of an attack. So, the Internet was invented. </div>
+				<br>
+				<div class="backfacetext"> And, later on, Along with memes</div>
+
+				<img class="knowthememes" src="http://i0.kym-cdn.com/photos/images/newsfeed/000/183/767/allthethings20110725-22047-1c7n473.png" alt="">
+				<div class="backfacetext"> </div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footerbase">
+		<div footerbase>
+
+			<a href="">.About Us.              </a>
+
+			<a href="">            .Contact Us.</a>
+
+			<h5 class="sources">Sources:
+				<a href="https://www.universetoday.com/25756/surface-area-of-the-earth/">1,</a>
+
+				<a href="https://en.wikipedia.org/wiki/History_of_the_Internet#The_early_global_%22digital_divide%22_emerges">2</a>
+
+			</h5>
+
+
+
+
+
+			<h6>1</h6>
+		</div>
+
+
+
+	</div>
+</body>
+
+</html>

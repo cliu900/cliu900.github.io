@@ -1,0 +1,156 @@
+<html>
+<head>
+  <title>Content Error</title>
+  <link rel='stylesheet' type='text/css' href='/blueprint/css/errorpage.css'/>
+</head>
+<body>
+<table class="header">
+  <tr>
+    <td class="CMTitle CMHFill"><span class="large">Content Error</span></td>
+  </tr>
+</table>
+<div class="body">
+  <p style="font-weight:bold;">CapException(errorCode: CAP-API-20012 (CANNOT_READ_BLOB), time: 2018-01-17T23:29:23+01:00, parameters: [[TransformedBlobKey: blob: com.coremedia.blueprint.elastic.social.cae.controller.ImageController$BlobAdapter@7fe538c1, transform: box;w=48;h=48]])</p>
+</div>
+<table class="footer">
+  <tr>
+    <td class="CMHFill">&nbsp;</td>
+  </tr>
+</table>
+
+<!-- stacktrace
+    <ul>
+    <li>com.coremedia.cache.EvaluationException.maybeWrap(EvaluationException.java:32)</li>
+    <li>com.coremedia.cache.Cache.doCompute(Cache.java:1705)</li>
+    <li>com.coremedia.cache.Cache.compute(Cache.java:2033)</li>
+    <li>com.coremedia.cache.Cache.make(Cache.java:1789)</li>
+    <li>com.coremedia.cache.Cache.getOrPeek(Cache.java:759)</li>
+    <li>com.coremedia.cache.Cache.get(Cache.java:643)</li>
+    <li>com.coremedia.transform.impl.CachedTransformedBlob.getCachedBlob(CachedTransformedBlob.java:94)</li>
+    <li>com.coremedia.transform.impl.CachedTransformedBlob.access$100(CachedTransformedBlob.java:23)</li>
+    <li>com.coremedia.transform.impl.CachedTransformedBlob$LazyTransformedBlob.getDelegate(CachedTransformedBlob.java:161)</li>
+    <li>com.coremedia.transform.internal.BlobDecorator.getNonNullDelegate(BlobDecorator.java:44)</li>
+    <li>com.coremedia.transform.internal.BlobDecorator.getSize(BlobDecorator.java:49)</li>
+    <li>com.coremedia.transform.internal.BlobDecorator.getSize(BlobDecorator.java:49)</li>
+    <li>com.coremedia.blueprint.elastic.social.cae.controller.ImageController.sendResponse(ImageController.java:134)</li>
+    <li>com.coremedia.blueprint.elastic.social.cae.controller.ImageController.handleRequestInternal(ImageController.java:108)</li>
+    <li>org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:154)</li>
+    <li>org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)</li>
+    <li>org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)</li>
+    <li>com.coremedia.objectserver.web.DispatcherServlet.doDispatch(DispatcherServlet.java:63)</li>
+    <li>org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)</li>
+    <li>org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)</li>
+    <li>org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)</li>
+    <li>javax.servlet.http.HttpServlet.service(HttpServlet.java:624)</li>
+    <li>org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)</li>
+    <li>javax.servlet.http.HttpServlet.service(HttpServlet.java:731)</li>
+    <li>com.coremedia.springframework.web.context.AsyncContextServlet.service(AsyncContextServlet.java:130)</li>
+    <li>javax.servlet.http.HttpServlet.service(HttpServlet.java:731)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>org.springframework.mobile.device.DeviceResolverRequestFilter.doFilterInternal(DeviceResolverRequestFilter.java:59)</li>
+    <li>org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)</li>
+    <li>org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.objectserver.web.CrossDomainEnabler.doFilter(CrossDomainEnabler.java:77)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.blueprint.elastic.social.cae.user.UserFilter.doFilter(UserFilter.java:53)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.elastic.core.impl.servlet.TenantFilter.doFilter(TenantFilter.java:61)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.blueprint.elastic.social.cae.springsocial.SessionSiteFilter.doFilter(SessionSiteFilter.java:46)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.blueprint.elastic.social.cae.guid.GuidFilter.doFilter(GuidFilter.java:75)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.blueprint.cae.filter.SiteFilter.doFilter(SiteFilter.java:48)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)</li>
+    <li>org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)</li>
+    <li>org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:139)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:155)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)</li>
+    <li>org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:144)</li>
+    <li>org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)</li>
+    <li>org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)</li>
+    <li>org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)</li>
+    <li>org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>com.coremedia.springframework.web.context.AsyncContextFilter.doFilter(AsyncContextFilter.java:147)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>ch.swissinfo.web.requestfilter.XSSFilter.doFilter(XSSFilter.java:34)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)</li>
+    <li>org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)</li>
+    <li>org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)</li>
+    <li>org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)</li>
+    <li>org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)</li>
+    <li>org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)</li>
+    <li>org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)</li>
+    <li>org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)</li>
+    <li>org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)</li>
+    <li>org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)</li>
+    <li>org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442)</li>
+    <li>org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:190)</li>
+    <li>org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640)</li>
+    <li>org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)</li>
+    <li>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)</li>
+    <li>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)</li>
+    <li>org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)</li>
+    <li>java.lang.Thread.run(Thread.java:748)</li>
+    </ul>
+    -->
+    <!-- root cause:
+    
+      message=transform:CANNOT_READ_BLOB(CAP-API-20012) [[TransformedBlobKey: blob: com.coremedia.blueprint.elastic.social.cae.controller.ImageController$BlobAdapter@7fe538c1, transform: box;w=48;h=48]]
+    -->
+  </body>
+</html>
